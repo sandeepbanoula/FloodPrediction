@@ -1,0 +1,48 @@
+body,
+html {
+  height: 100%;
+}
+
+.bg {
+  /* The image URL */
+  background-image: url("./images/chris-gallagher-9Jgn8hSYUFc-unsplash.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: absolute;
+}
+
+.form-body {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.pulse {
+  animation: pulse-animation 1s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(220, 53, 69, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 50px rgba(220, 53, 69, 0);
+  }
+}
